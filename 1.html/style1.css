@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #333;
+   background-color: whitesmoke;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+}
+
+.navlink {
+    list-style: none;
+    display: flex;
+}
+
+.navlink li {
+    margin-left: 20px;
+}
+
+.navlinks a {
+    text-decoration: none;
+   
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+    }
+}
